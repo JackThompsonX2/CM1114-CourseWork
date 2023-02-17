@@ -1,0 +1,77 @@
+body{
+    background-color: lightslategray;
+}
+
+header{
+    background-color: ivory;
+    border-radius: 10px;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color :black;
+    font-family: Arial;
+}
+
+h1{
+   font-size: 50px; 
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-size: 14px;
+}
+
+main{
+    background-color: ivory;
+    border-radius: 10px;
+}
+
+aside{
+    background-color: ivory;
+    border-radius: 10px;
+}
+
+footer{
+    background-color:skyblue;
+    border-radius: 10px;
+}
+
+nav li {
+    border: 2px solid ivory;
+    background-color:dodgerblue;
+    list-style: none;
+}
+
+nav li a {
+    color: ivory;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li:hover{
+    background-color:indigo;
+}
+
+li.active{
+    background-color: midnightblue;
+}
+table{
+    font-family: Arial;
+    border-collapse: collapse;
+}
+
+table td,table th {
+    border:  solid #F0F0F0;
+}
+
+table tr:hover{
+    background-color: slategray;
+}
+
+table th{
+    background-color: skyblue;
+    color: white;
+}
