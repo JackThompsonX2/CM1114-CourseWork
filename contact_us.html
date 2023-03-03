@@ -2,39 +2,46 @@
     <head>
         <title>Rock Music Society</title>
         <link rel = "stylesheet" href="css/main.css">
+        <!--<link rel = "stylesheet" href="css/experiment.css">-->
     </head>
     
     <body>
-        <header><h1>Rock Music Society</h1> </header>
+<header><img id="logo" src="images/logo.png" alt="logo"/><h1>Rock Music Society</h1> </header>
         
         <nav>
+            <ul>
         <li><a href = 'index.html'>Home</a></li>
         <li><a href = 'img_gallery.html'>Gallery</a></li>
         <li><a href = 'Current_members.html'>Current Members</a></li>
         <li><a href = 'event_calendar.html'>Events</a></li>
         <li class="active"><a href = 'contact_us.html'>Contact Us</a></li>
+            </ul>
         </nav>
         <main> </main>
-        <div>
+        <div id="left-Col">
+            <h3>Contact us</h3>
+            <p>Use The Form Below</p>
             <form>
                 <fieldset>
-                <legend>Contact Us Using The Form Below</legend>
 
-                <label for = "name">name:</label>
+                <label for = "name">Name:</label>
                 <input type="text" name="name" value=""/><br/>
-                <label for = "email">email:</label>
+                <label for = "email">Email:</label>
                 <input type="email" name="email" value=""/><br/>
                 <label for="membership">Membership?</label><br>
                 <input type="radio" id="membershipY" name="member" value="YES">
-                <label for="membershipY">YES</label><br>
+                <label for="membershipY">Yes</label><br>
                 <input type="radio" id="membershipN" name="member" value="NO">
-                <label for="membershipN">NO</label><br>
+                <label for="membershipN">No</label><br>
                 <label for = "Comments">Comments:</label>
                 <input type="text" name="name" value=""/><br/>
                 <label for="myfile">Attach a file</label>
                 <input type="file" id="myfile" name="myfile">
             </fieldset>
             </form>
+        </div>
+        <div id="right-Col">
+
         </div>
         <aside> </aside>
 
