@@ -31,6 +31,7 @@ main{
     background-color: ivory;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
+    margin-top: 10px;
 }
 
 aside{
@@ -38,19 +39,15 @@ aside{
     border-radius: 10px;
 }
 
-#Left-Col{
+#left-Col{
     font-family: arial;
-    float: left;
-    
+    float:left;
+    width:50%
 }
-
-fieldset{
-    float: left;
-}
-
-footer{
-    background-color:skyblue;
-    border-radius: 10px;
+#right-Col{
+    font-family: arial;
+    width:50%;
+    float:right;
 }
 
 nav ul{
@@ -130,4 +127,22 @@ img.d-block{
 .carousel-control-next{
     margin-right: 15%;
     background-color: rgb(0, 0, 0);
+}
+.gallery-img{
+    width:100%;
+}
+
+#img-gallery{
+    padding-top: 10px;
+}
+
+#img-gallery .row{
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color:skyblue;
+    border-radius: 10px;
+    width:100%;
+    float:right;
 }
