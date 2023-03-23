@@ -1,61 +1,69 @@
 <html>
     <head>
         <title>Rock Music Society</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <link rel = "stylesheet" href="css/main.css">
-        <!--<link rel = "stylesheet" href="css/experiment.css">-->
+        <link rel ="stylesheet" href="css/main.css">
     </head>
-    
+
     <body>
-<header><img id="logo" src="images/logo.png" alt="logo"/><h1>Rock Music Society</h1> </header>
-        
+        <header>
+            <img id ="logo" src="images/logo.png" alt ="logo"><h1 id  = "title">Rock Music Society</h1> 
+        </header>
+
+
         <nav>
             <ul>
-        <li><a href = 'index.html'>Home</a></li>
-        <li><a href = 'img_gallery.html'>Gallery</a></li>
-        <li><a href = 'Current_members.html'>Current Members</a></li>
-        <li><a href = 'event_calendar.html'>Events</a></li>
-        <li class="active"><a href = 'contact_us.html'>Contact Us</a></li>
+                <li><a href = 'index.html'>Home</a> </li>
+                <li><a href = 'img_gallery.html'>Gallery</a></li>
+                <li><a href = 'Current_members.html'>Current Members</a></li>
+                <li><a href = 'event_calendar.html'>Events</a></li>
+                <li class = "active"><a href = 'contact_us.html'>Contact Us</a></li>
             </ul>
         </nav>
-        
-        
-        <div id="left-Col">
-            <main> 
-            <h3>Contact us</h3>
-            <p>Use The Form Below</p>
-            <form>
-                <fieldset>
-                <label for = "name">Name:</label>
-                <input type="text" name="name" value=""/><br/>
-                <label for = "email">Email:</label>
-                <input type="email" name="email" value=""/><br/>
-                <label for="membership">Membership?</label><br>
-                <input type="radio" id="membershipY" name="member" value="YES">
-                <label for="membershipY">Yes</label><br>
-                <input type="radio" id="membershipN" name="member" value="NO">
-                <label for="membershipN">No</label><br>
-                <label for = "Comments">Comments:</label>
-                <input type="text" name="name" value=""/><br/>
-                <label for="myfile">Attach a file</label>
-                <input type="file" id="myfile" name="myfile">
-                </fieldset>
-            </form>
+
+        <main>
+            <div id = "left-col">
+                <form>
+                    <h3>Contact us</h3>
+                    <p>Use the form below</p>
+                    <fieldset> 
+
+                        <label for="name">Name:</label>
+                        <input type = "text" name="name" value=""/> <br/>
+                        <label for="email">Email:</label>
+                        <input type = "email" name="email" value=""/> <br/>
+                        <label for="yesmember">Membership status Member</label>
+                        <input type = "radio" name = "yesmember"value="Member">
+                        <label for="nomember">Non-Member</label>
+                        <input type = "radio" name = "nomember"value="Non-Member"><br/>
+                        <label for="comments">Comments:</label>
+                        <input type = "text" name="comments" value=""/> <br/>
+                        <label for ="file">Attach a file</label>
+                        <input type = "file" name="file"><br/>
+                        <button type="button" onclick='send_form("form_outcome","Form has been sent successfully!")'>Submit</button>
+                        <script>
+                            function send_form(id,content){
+                                var container = document.getElementById(id)
+                                container.innerHTML = content
+                            }
+
+                        </script>
+                    </fieldset>
+                </form>
+                <div>
+                    <p id="form_outcome"></p>
+                </div>
+
+            </div>
+            <div id = "right-col">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/nT9WUWTPQrs" title="Supertramp - The Logical Song (Live In Paris 1979)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </main>
-        </div>
-        
 
-        <div id="right-Col">
-            <aside> 
-            
-            </aside>
-        </div>
-    
+        <aside>
+        </aside>
+
         <footer>
-            <p>Copyright Jack Thompson</p>      
+            <p>Copyright Jack Thompson</p>     
         </footer>
-
     </body>
 </html>

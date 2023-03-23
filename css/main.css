@@ -1,148 +1,162 @@
 body{
-    background-color: lightslategray;
+    background-color: darkgray;
 }
 
 header{
-    background-color: ivory;
+    background-color: whitesmoke;
     border-top-left-radius:10px;
     border-top-right-radius:10px;
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
 }
 
 h1,h2,h3,h4,h5,h6,p{
-    color :black;
-    font-family: Arial;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
 }
 
 h1{
-   font-size: 50px;
-   display: inline; 
+    font-size: 36pt;
 }
 
 h3{
-    font-size: 30px;
+    font-size: 18pt;
 }
 
 p{
-    font-size: 14px;
+    font-size: 10pt;
 }
 
 main{
-    background-color: ivory;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
-    margin-top: 10px;
-}
-
-aside{
-    background-color: ivory;
+    padding: 10px;
+    background-color: whitesmoke;
     border-radius: 10px;
+    margin: 10px;
+}
+aside{
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 10px;
 }
 
-#left-Col{
-    font-family: arial;
-    float:left;
-    width:50%
-}
-#right-Col{
-    font-family: arial;
-    width:50%;
-    float:right;
+footer{
+    padding: 2px;
+    background-color:cornflowerblue;
+    border-radius: 10px;
+    margin: 5px;
 }
 
 nav ul{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
-nav li {
-    border: 2px solid ivory;
-    background-color:dodgerblue;
+nav li{
+    border: solid 2px whitesmoke;
+    background-color:cornflowerblue;
     list-style: none;
     float: left;
     width: 15%;
-    padding: 16px;
+    padding:16px;
 }
 
-nav li a {
-    color: ivory;
-    text-align: center;
+nav li a{
+    color:whitesmoke;
     text-decoration: none;
 }
 
-nav li:hover{
-    background-color:indigo;
+Nav li:hover{
+    background-color: navy;
 }
 
-li.active{
-    background-color: midnightblue;
+.active{
+    background-color: navy;
 }
+
 table{
-    font-family: Arial;
-    border-collapse: collapse;
+    font-family:Arial, Helvetica, sans-serif;
+     border-collapse: collapse;
 }
 
-table td,table th {
-    border: 2px solid #F0F0F0;
+table td, table th{
+    border:2px solid  #F0F0F0;
 }
 
 Table tr:nth-child(even){
-    background-color: lightgrey;
+    background-color:rgb(189, 189, 189);
 }
 
-Table tr:nth-child(odd){
-    background-color: darkgrey;
+Table tr:hover{
+    background-color:dimgray;
 }
 
-table tr:hover{
-    background-color: gold;
-}
-
-
-table th{
-    background-color: skyblue;
+Table th{
+    background-color: cornflowerblue;
     color: white;
-    border: solid
 }
+
 
 #logo{
     height: 50px;
     width: 50px;
-    float:left;
-    margin-right:20px
+    float: left;
+    margin-right: 10px;
 }
 
-img.d-block{
+#title{
+    display: inline;
+}
+
+#left-col{
+    float: left;
+    overflow:hidden;
+    padding-left: 2%;
+    padding-top: 0;
+}
+
+#right-col{
+    padding:10px;
+       padding-left:14%;
+       overflow:hidden;
+    }
+
+
+input{
+    margin: 5px;
+    
+}
+fieldset{
+    margin: 5px;
+}
+
+#carouselExampleCaptions{
     width: 500px;
     height: 500px;
-    margin-left: auto;
-    margin-right:auto;       
+    text-align: center;
+    margin-left: 30%;
 }
 
-.carousel-control-prev{
-    margin-left: 15%;
-    background-color: rgb(0, 0, 0);
+.carousel-item h3{
+    text-shadow: 2px 2px 5px white;
+    text-decoration: solid;
 }
-.carousel-control-next{
-    margin-right: 15%;
-    background-color: rgb(0, 0, 0);
-}
+
 .gallery-img{
-    width:100%;
+    width: 100%;
+
 }
 
 #img-gallery{
-    padding-top: 10px;
+    padding-top:10px;
 }
 
 #img-gallery .row{
     margin-bottom: 10px;
 }
 
-footer{
-    background-color:skyblue;
-    border-radius: 10px;
-    width:100%;
-    float:right;
+#log{
+    float: right;
+    padding-top:10px;
 }

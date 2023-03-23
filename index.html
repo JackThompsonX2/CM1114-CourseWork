@@ -2,71 +2,95 @@
     <head>
         <title>Rock Music Society</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <link rel = "stylesheet" href="css/main.css">
-        <!--<link rel = "stylesheet" href="css/experiment.css">-->
-        
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel ="stylesheet" href="css/main.css">
     </head>
-    
+
     <body>
-        <header><img id="logo" src="images/logo.png" alt="logo"/><h1>Rock Music Society</h1> </header>
-        
+        <header>
+            <img id ="logo" src="images/logo.png" alt ="logo"><h1 id  = "title">Rock Music Society</h1>
+            <form id ="log"> 
+                <input type="email" id ="email2" placeholder = "Email">
+                <input type="password" id ="Password2"placeholder = "Password">
+                <button type="button" onclick="login()">Login</button>
+            </form>
+            <script>
+                var counter = 2;
+                function login(){
+                    if(counter % 2 == 0){
+                        alert('You have been logged in!');
+                    }
+                    else {
+                        alert('You have been logged out!');
+                    }
+                    counter += 1;
+                }
+            </script>
+                
+                
+        </header>
+
         <nav>
             <ul>
-        <li class="active"><a href = 'index.html'>Home</a></li>
-        <li><a href = 'img_gallery.html'>Gallery</a></li>
-        <li><a href = 'Current_members.html'>Current Members</a></li>
-        <li><a href = 'event_calendar.html'>Events</a></li>
-        <li><a href = 'contact_us.html'>Contact Us</a></li>
+                <li class = "active"><a href = 'index.html'>Home</a> </li>
+                <li><a href = 'img_gallery.html'>Gallery</a></li>
+                <li><a href = 'Current_members.html'>Current Members</a></li>
+                <li><a href = 'event_calendar.html'>Events</a></li>
+                <li><a href = 'contact_us.html'>Contact Us</a></li>
             </ul>
         </nav>
+
         <main>
             <div>
-            <h3>Welcome to The Rock Music Society</h3>
+                <h3>Welcome to The Rock Music Society</h3>
 
-            <p>The Rock Music Society is RGU's unofficial Rock Music Society.We listen to music from the beatles to the strokes. from hard Rock to prog Rock we listen to, talk about and perform rock music</p>
-            </div>
+                <p>The Rock Music Society is RGU's unofficial Rock Music Society.We listen to music from the beatles to the strokes. from hard Rock to prog Rock we listen to, talk about and perform rock music</p>
 
-            <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+            </div> 
+
+            <div id="carouselExampleCaptions" class="carousel slide">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
-                <!-- Wrapper -->
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
-                 <!-- Item 1 -->
-                    <div class="carousel-item active">
-                    <img class="d-block" src="images/Beatles.jpeg">
+                  <div class="carousel-item active">
+                    <img src="images/Revolver.jpg" class="d-block w-100" alt="Revolver">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Revolver</h3>
                     </div>
-                <!-- Item 2 -->
-                    <div class="carousel-item">
-                    <img class="d-block" src="images/Doors.jpeg">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/breakfast.jpg" class="d-block w-100" alt="Breakfast in America">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Breakfast in America</h3>
                     </div>
-                
-                 <!-- Item 3 -->
-                    <div class="carousel-item">
-                    <img class="d-block" src="images/LedZeppelin.jpeg">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/led4.jpg" class="d-block w-100" alt="Led Zeppelin IV">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h3>Led Zeppelin IV</h3>
                     </div>
+                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
                 </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-            </div>
-                
-        </main>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+    </main>
+
         <aside>
-            <h3>latest News</h3> 
+            <h3>Latest News</h3>
         </aside>
 
         <footer>
-            <p>Copyright Jack Thompson</p> 
+            <p>Copyright Jack Thompson</p>     
         </footer>
     </body>
 </html>
