@@ -16,7 +16,7 @@
             <ul>
                 <li><a href = 'index.html'>Home</a> </li>
                 <li class = "active"><a href = 'img_gallery.html'>Gallery</a></li>
-                <li><a href = 'urrent_members.html'>Current Members</a></li>
+                <li><a href = 'current_members.html'>Current Members</a></li>
                 <li><a href = 'event_calendar.html'>Events</a></li>
                 <li><a href = 'contact_us.html'>Contact Us</a></li>
             </ul>
@@ -26,52 +26,49 @@
             <div id="img-gallery" class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <img id ="beat" src="images/Beatles.jpeg" onmouseover = "listen('beat')" onmouseout="out('beat')"class="gallery-img"/>
+                        <img id ="beat" src="images/Beatles.jpeg" onmouseover = "highlight('beat')" onmouseout="delight('beat')" onload="onloads('beat')"class="gallery-img"/>
                     </div>
                     <div class="col-sm">
-                        <img id ="led" src="images/LedZeppelin.jpeg" onmouseover="highlight('led')" onmouseout="delight('led')"class="gallery-img"/>
+                        <img id ="led" src="images/LedZeppelin.jpeg" onmouseover="highlight('led')" onmouseout="delight('led')"onload="onloads('led')"class="gallery-img"/>
                     </div>
                     <div class="col-sm">
-                        <img id = "queen" src="images/queen.jpeg" onmouseover="highlight('queen')" onmouseout="delight('queen')" class="gallery-img"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <img id ="fleet" src="images/fleetwoodmac.jpeg" onmouseover="highlight('fleet')" onmouseout="delight('fleet')" class="gallery-img"/>
-                    </div>
-                    <div class="col-sm">
-                        <img id = "pol"src="images/police.jpeg" onmouseover="highlight('pol')" onmouseout="delight('pol')" class="gallery-img"/>
-                    </div>
-                    <div class="col-sm">
-                        <img id = "who" src="images/TheWho.jpeg" onmouseover="highlight('who')" onmouseout="delight('who')" class="gallery-img"/>
+                        <img id = "queen" src="images/queen.jpeg" onmouseover="highlight('queen')" onmouseout="delight('queen')"onload="onloads('queen')" class="gallery-img"/>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <img  id = "doors" src="images/Doors.jpeg" onmouseover="highlight('doors')" onmouseout="delight('doors')"class="gallery-img"/>
+                        <img id ="fleet" src="images/fleetwoodmac.jpeg" onmouseover="highlight('fleet')" onmouseout="delight('fleet')"onload="onloads('fleet')" class="gallery-img"/>
                     </div>
                     <div class="col-sm">
-                        <img id = "deep" src="images/DeepPurple.jpeg" onmouseover="highlight('deep')" onmouseout="delight('deep')" class="gallery-img"/>
+                        <img id = "pol"src="images/police.jpeg" onmouseover="highlight('pol')" onmouseout="delight('pol')"onload="onloads('pol')" class="gallery-img"/>
                     </div>
                     <div class="col-sm">
-                        <img id = "eagle" src="images/eagles.jpeg" onmouseover="highlight('eagle')" onmouseout="delight('eagle')" class="gallery-img"/>
+                        <img id = "who" src="images/TheWho.jpeg" onmouseover="highlight('who')" onmouseout="delight('who')"onload="onloads('who')" class="gallery-img"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img  id = "doors" src="images/Doors.jpeg" onmouseover="highlight('doors')" onmouseout="delight('doors')"onload="onloads('doors')"class="gallery-img"/>
+                    </div>
+                    <div class="col-sm">
+                        <img id = "deep" src="images/DeepPurple.jpeg" onmouseover="highlight('deep')" onmouseout="delight('deep')"onload="onloads('deep')" class="gallery-img"/>
+                    </div>
+                    <div class="col-sm">
+                        <img id = "eagle" src="images/eagles.jpeg" onmouseover="highlight('eagle')" onmouseout="delight('eagle')"onload="onloads('eagle')" class="gallery-img"/>
                     </div>
                 </div>
             </div>
             <script>
-                function listen(id){
-                document.getElementById(id).addEventListener("mouseover", highlight(id));
-                }
-                function out(id){
-                document.addEventListener("mouseout", delight(id))
-                }
                 function highlight(id) {
-                    document.getElementById(id).style="filter: blur(0px);border"
+                    document.getElementById(id).style="filter: blur(0px);border: navy solid 4px"
                 }
                 function delight(id) {
-                    document.getElementById(id).style="filter: blur(0px)"
+                    document.getElementById(id).style="border:none"
                 }
-            
+                function onloads(id){
+                    document.getElementById(id).style="filter: blur(8px);"
+                }
+                
                 </script>
                 
                 
