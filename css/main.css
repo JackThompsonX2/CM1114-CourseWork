@@ -1,7 +1,9 @@
+/*body*/
 body{
     background-color: darkgray;
 }
 
+/*header*/
 header{
     background-color: whitesmoke;
     border-top-left-radius:10px;
@@ -10,29 +12,36 @@ header{
     margin: 10px;
 }
 
+/*h1,h2,h3,h4,h5,h6,p*/
 h1,h2,h3,h4,h5,h6,p{
     font-family:Arial, Helvetica, sans-serif;
     color:black;
 }
 
+/*h1*/
 h1{
     font-size: 36pt;
 }
 
+/*h3*/
 h3{
     font-size: 18pt;
 }
 
+/*p*/
 p{
     font-size: 10pt;
 }
 
+/*main*/
 main{
     padding: 10px;
     background-color: whitesmoke;
     border-radius: 10px;
     margin: 10px;
 }
+
+/*aside*/
 aside{
     padding: 10px;
     background-color: whitesmoke;
@@ -40,64 +49,87 @@ aside{
     margin: 10px;
 }
 
+/*footer*/
 footer{
     padding: 2px;
-    background-color:cornflowerblue;
+    background-color:rgb(46, 85, 156);
     border-radius: 10px;
     margin: 5px;
 }
 
+/*footer p*/
+footer p{
+    color: whitesmoke;
+}
+
+/*nav ul*/
 nav ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
+/*nav li*/
 nav li{
     border: solid 2px whitesmoke;
-    background-color:cornflowerblue;
+    background-color:rgb(46, 85, 156);
     list-style: none;
     float: left;
-    width: 15%;
+    width: 13%;
     padding:16px;
 }
 
+/*nav li a*/
 nav li a{
     color:whitesmoke;
     text-decoration: none;
 }
 
+/*nav li:hover*/
 Nav li:hover{
     background-color: navy;
 }
 
+/*.active*/
 .active{
     background-color: navy;
 }
 
+/*table*/
 table{
     font-family:Arial, Helvetica, sans-serif;
-     border-collapse: collapse;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed
 }
 
+/*table td, table th*/
 table td, table th{
     border:2px solid  #F0F0F0;
+    text-align: center;
+    padding: 10px;
+    width:20%;
+    font-size: 10pt
 }
 
+/*table td, table th*/
 Table tr:nth-child(even){
     background-color:rgb(189, 189, 189);
 }
 
+/*table tr:hover*/
 Table tr:hover{
     background-color:dimgray;
 }
 
+/*table th*/
 Table th{
-    background-color: cornflowerblue;
+    background-color: rgb(46, 85, 156);
     color: white;
+    
 }
 
-
+/*#logo*/
 #logo{
     height: 50px;
     width: 50px;
@@ -105,10 +137,12 @@ Table th{
     margin-right: 10px;
 }
 
+/*#title*/
 #title{
     display: inline;
 }
 
+/*#left-col*/
 #left-col{
     float: left;
     overflow:hidden;
@@ -116,21 +150,25 @@ Table th{
     padding-top: 0;
 }
 
+/*#right-col*/
 #right-col{
     padding:10px;
-       padding-left:14%;
-       overflow:hidden;
-    }
-
-
-input{
-    margin: 5px;
-    
+    padding-left:14%;
+    overflow:hidden;
 }
+
+
+/*input*/
+input{
+    margin: 5px; 
+}
+
+/*fieldset*/
 fieldset{
     border:solid 2px;
 }
 
+/*#carouselExampleCaptions*/
 #carouselExampleCaptions{
     width: 500px;
     height: 500px;
@@ -138,38 +176,66 @@ fieldset{
     margin-left: 30%;
 }
 
+/*.carousel-item h3*/
 .carousel-item h3{
     text-shadow: 2px 2px 5px white;
     text-decoration: solid;
+    color: dimgray;
 }
 
+/*.gallery-img*/
 .gallery-img{
     width: 100%;
 
 }
 
+/*#img-gallery*/
 #img-gallery{
     padding-top:10px;
 }
 
+/*#img-gallery .row*/
 #img-gallery .row{
     margin-bottom: 10px;
 }
 
+/*#log*/
 #log{
     float: right;
     padding-top:10px;
 }
 
+/*#you*/
 #you{
     float:right
 }
+
+/*.carousel-control-prev*/
 .carousel-control-prev{
     background-color:  black;
     Opacity: 0.2;
 }
 
+/*.carousel-control-next*/
 .carousel-control-next{
     background-color:  black;
     Opacity: 0.2;
+}
+
+/*.col-sm*/
+.col-sm{
+    text-align: center;
+}
+
+#articlepic{
+    float:left;
+    width: 100;
+    height: 100px;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+#article{
+    display: inline;
+
 }
