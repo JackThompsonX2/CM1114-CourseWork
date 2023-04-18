@@ -32,36 +32,150 @@
         </nav>
 
         <main>
+            
+            <!--div that contains a welcome messagage-->
             <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0hLESLXqBLI" title="Led Zeppelin - Led Zeppelin IV (Remaster) [Official Full Album]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Welcome to The recommended album page</h3>
+                <p>members were asked to vote on Which albums they would recommend for people to listen to. theseare those albums</p>
             </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GNkWac-Nm0A" title="Yes - Close To The Edge (Full Album)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+            <!-- div for albumcontainer so it can be displayed as a grid --> 
+            <div class="albumcontainer">
+               
+                <!--div for album-->
+                <div class = "album">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/0hLESLXqBLI" title="Led Zeppelin - Led Zeppelin IV (Remaster) [Official Full Album]"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <!-- ledinfo div that contians text which wilkl be used with javascript-->
+                    <div id ='ledinfo'>
+                        <p>Album Name: Led Zeppelin IV</p>
+                        <p>Album Artist: Led Zeppelin</p>
+                        <p>Album Release Date: 1971</p>
+                    </div>
+                    <button id ="button1" type="button" onclick="hide(this.id,'ledinfo')">Hide Album Details</button>
+                </div>
+                
+                <!--div for album-->
+                <div class = "album">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/GNkWac-Nm0A" title="Yes - Close To The Edge (Full Album)"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <!-- yesinfo div that contians text which wilkl be used with javascript-->
+                    <div id = 'yesinfo'>
+                        <p>Album Name: Close To The Edge</p>
+                        <p>Album Artist: Yes</p>
+                        <p>Album Release Date: 1972</p>
+                    </div>
+                    <button id ="button2" type="button" onclick="hide(this.id,'yesinfo')">Hide Album Details</button>
+                </div>
+                
+                <!--div for album-->
+                <div class = "album">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/lrltGatijXc" title="Fleetwood Mac - Rumours {Remastered} [Full Album] (HQ)"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <!-- fleetinfo div that contians text which wilkl be used with javascript-->
+                    <div id="fleetinfo">
+                        <p>Album Name: Rumours</p>
+                        <p>Album Artist: Fleetwood Mac</p>
+                        <p>Album Release Date: 1977</p>
+                    </div>
+                    <button id ="button3" type="button" onclick="hide(this.id,'fleetinfo')">Hide Album Details</button>
+                </div>
+                
+                <!--div for album-->               
+                <div class = "album">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/videoseries?list=PLg5pp7nrH0IqV2ESEZmmgWtECbzkS8d3O" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <!-- revolveinfo div that contians text which wilkl be used with javascript-->
+                    <div id =revolveinfo>
+                        <p>Album Name: Revolver</p>
+                        <p>Album Artist: The Beatles</p>
+                        <p>Album Release Date: 1966</p>
+                    </div>
+                    <button id ="button4" type="button" onclick="hide(this.id,'revolveinfo')">Hide Album Details</button>
+                </div>
+                
+                <!--div for album-->
+                <div class = "album">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/videoseries?list=PLycVTiaj8OI9Ptzsl9nzxfwUgZ0jx-Hyb" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <!-- rubberinfo div that contians text which wilkl be used with javascript-->
+                    <div id ="rubberinfo">
+                        <p>Album Name: Rubber Soul</p>
+                        <p>Album Artist: The Beatles</p>
+                        <p>Album Release Date: 1965</p>
+                    </div>
+                    <button id ="button5" type="button" onclick="hide(this.id,'rubberinfo')">Hide Album Details</button>
+                </div>
+                
+                <!--div for album-->
+                <div class = "album">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/videoseries?list=PLxZdrYh7-ru50IE0KAANMqntrjDJ4jlPk" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <!-- rockNinfo div that contians text which wilkl be used with javascript-->
+                    <div id = "rockNinfo">
+                        <p>Album Name: Long Live Rock 'N' Roll</p>
+                        <p>Album Artist: Rainbow</p>
+                        <p>Album Release Date: 1978</p>
+                    </div>
+                    <button id ="button6" type="button" onclick="hide(this.id,'rockNinfo')">Hide Album Details</button>
+                </div>
+                
+                <!--div for album-->
+                <div class = "album">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/videoseries?list=PLYcuDqKgaxyXpCHQouKtthPZigp-HHehe" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <!-- freeinfo div that contians text which wilkl be used with javascript-->
+                    <div id = "freeinfo">
+                        <p>Album Name: Fire And Water</p>
+                        <p>Album Artist: Free</p>
+                        <p>Album Release Date: 1970</p>
+                    </div>
+                    <button id ="button7" type="button" onclick="hide(this.id,'freeinfo')">Hide Album Details</button>
+                </div>
+                
+                <!--div for album-->
+                <div class = "album">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/ou8uLo3Ke6U" title="Dav̲i̲d B̲o̲wie - Z̲i̲g̲g̲y S̲ta̲rD̲ust Full Album 1972"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <!-- ziggyinfo div that contians text which wilkl be used with javascript-->
+                    <div id = "ziggyinfo">
+                        <p>Album Name: The Rise And Fall Of Ziggy Stardust And The Spiders From Mars</p>
+                        <p>Album Artist: David Bowie</p>
+                        <p>Album Release Date: 1972</p>
+                    </div>
+                    <button id ="button8" type="button" onclick="hide(this.id,'ziggyinfo')">Hide Album Details</button>
+                </div>
+                
+                <!--div for album-->
+                <div class = "album">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/videoseries?list=PLjb5kMzP2zomdQjxgvBoZZE04oJ8BsIPU" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+                    <!-- laylainfo div that contians text which wilkl be used with javascript-->
+                    <div id = "laylainfo">
+                        <p>Album Name: Layla And Other Assorted Love Songs</p>
+                        <p>Album Artist: Derek And The Dominos</p>
+                        <p>Album Release Date: 1970</p>
+                    </div>
+                    <button id ="button9" type="button" onclick="hide(this.id,'laylainfo')">Hide Album Details</button>
+                </div>
             </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lrltGatijXc" title="Fleetwood Mac - Rumours {Remastered} [Full Album] (HQ)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLg5pp7nrH0IqV2ESEZmmgWtECbzkS8d3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLycVTiaj8OI9Ptzsl9nzxfwUgZ0jx-Hyb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLxZdrYh7-ru50IE0KAANMqntrjDJ4jlPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLYcuDqKgaxyXpCHQouKtthPZigp-HHehe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Uw85aNJabkE" title="King Crimson - In the Court of the Crimson King (Original Master Edition)  2004" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ou8uLo3Ke6U" title="Dav̲i̲d B̲o̲wie - Z̲i̲g̲g̲y S̲ta̲rD̲ust Full Album 1972" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLjb5kMzP2zomdQjxgvBoZZE04oJ8BsIPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
+
+            
+            <!-- Script tag has javascript which has a button that when onclick hides the album info text-->
+            <!-- and chnegs the button texty from Hide Album Details to Show Album Details-->
+            <!-- once clicked again the album detials will be shown-->
+            <!-- and the button text will show Hide Album Details-->
+            <script>
+                function hide(id,id2){
+                    if(document.getElementById(id).innerText=="Hide Album Details"){
+                        document.getElementById(id).innerText ="Show Album Details"
+                        document.getElementById(id2).style="display:none"
+                    }else{
+                        document.getElementById(id).innerText ="Hide Album Details"
+                        document.getElementById(id2).style="visibility:visible"
+                    }
+                    }
+            </script>
         </main>
 
         <!-- Aside Content -->

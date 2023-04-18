@@ -32,6 +32,55 @@
         </nav>
 
         <main>
+            
+            <!-- div that contains a welcome message plus a bit about what the user can do to images-->
+            <div>
+                <h3>Welcome to The Artist page</h3>
+                <p>Members were asked to vote on Which artist/Musician they like the most</p>
+                <p>This includes their twitter and an image of them</p>
+                <p>if you click on an image it will increase the size and if you double click it will decrease it</p>
+            </div>
+           
+            <!-- div for artistcontainer so it can be displayed as a grid -->
+            <div class = artistcontainer>
+                
+                <!-- each image has an id so it can be used with javascript-->
+                <div>
+                    <img id="Paul" src ="images/Paul.jpg" alt ="Paul McCartney" onmousedown="bigger(this.id)" ondblclick="getBack(this.id)">
+                    <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/PaulMcCartney?ref_src=twsrc%5Etfw">Tweets by PaulMcCartney</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                </div>
+                <div>
+                    <img id="Bowie" src ="images/bowie.jpg" alt = "David Bowie" onmousedown="bigger(this.id)" ondblclick="getBack(this.id)" >
+                    <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/DavidBowieReal?ref_src=twsrc%5Etfw">Tweets by DavidBowieReal</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                </div>
+                <div>
+                    <img id="Noel" src ="images/noel.jpg" alt = "Noel Gallagher" onmousedown="bigger(this.id)" ondblclick="getBack(this.id)" >
+                    <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/NoelGallagher?ref_src=twsrc%5Etfw">Tweets by NoelGallagher</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                </div>
+                <div>
+                    <img id="Page" src ="images/page.jpg" alt = "Jimmy Page" onmousedown="bigger(this.id)" ondblclick="getBack(this.id)" >
+                    <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/JimmyPage?ref_src=twsrc%5Etfw">Tweets by JimmyPage</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                </div>
+                <div>
+                    <img id="Plant" src ="images/plant.jpg" alt = "Robert Plant" onmousedown="bigger(this.id)" ondblclick="getBack(this.id)" >
+                    <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/RobertPlant?ref_src=twsrc%5Etfw">Tweets by RobertPlant</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                </div>
+                <div>
+                    <img id ="blackmore" src="images/blackmore.jpg" alt ="Ritchie Blackmore" onmousedown="bigger(this.id)" ondblclick="getBack(this.id)" >
+                    <a class="twitter-timeline" data-width="250" data-height="500" href="https://twitter.com/TheRealRitchieB?ref_src=twsrc%5Etfw">Tweets by TheRealRitchieB</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                </div>
+            </div>
+            
+            <!-- Script tag has javascript which increase image size onmousedown-->
+            <!-- then on mouse double click decrease the size-->
+            <script>
+                function bigger(id){
+                    document.getElementById(id).style="width: 75%"
+                }
+                function getBack(id){
+                    document.getElementById(id).style="width: 50%"
+                }  
+            </script>
         </main>
 
         <!-- Aside Content -->
